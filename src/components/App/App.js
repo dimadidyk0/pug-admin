@@ -6,10 +6,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Develop</h1>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Create <code>src/App.js</code> and save to reload.
           </p>
           <a
             className="App-link"
