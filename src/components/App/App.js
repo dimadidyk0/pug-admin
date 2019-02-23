@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import logo from '../../assets/img/logo.svg';
 import './App.css';
 
+const test = 'Test variable';
+
 class App extends Component {
   render() {
+    console.log(test);
+
     return (
       <div className="App">
-        <h1>Develop 1</h1>
+        <h1>Develop Dima</h1>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
