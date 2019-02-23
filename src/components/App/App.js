@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import logo from '../../assets/img/logo.svg';
 import './App.css';
 
+const test = 'Test variable';
+
 class App extends Component {
   render() {
+    console.log(test);
+
     return (
       <div className="App">
         <h1>Develop Umary</h1>
