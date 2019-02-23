@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import logo from '../../assets/img/logo.svg';
+import Header from '../Header/Header';
 import './App.css';
-
-const test = 'Test variable';
 
 class App extends Component {
   render() {
-    console.log(test);
-
     return (
       <div className="App">
-        <h1>Develop Umary</h1>
+        <Header />
+        <hr />
+        <Header />
+
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -29,7 +29,5 @@ class App extends Component {
     );
   }
 }
-
-const pug = 'Umary';
 
 export default App;
