@@ -1,31 +1,22 @@
-import React, { Component } from 'react';
-import logo from '../../assets/img/logo.svg';
-import Header from '../Header/Header';
-import './App.css';
+import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Nav from 'components/Nav/Nav';
+import Home from 'routes/Home/Home';
+import ErrorPage from 'routes/ErrorPage/ErrorPage';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <hr />
-        <Header />
+      <Router>
+        <Fragment>
+          <Nav />
 
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Create <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+          <Route path="/" exact component={Home} />
+          <Route path="/gallery" component={ErrorPage} />
+          <Route path="/products" component={ErrorPage} />
+          <Route path="/contacts" component={ErrorPage} />
+        </Fragment>
+      </Router>
     );
   }
 }
