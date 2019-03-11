@@ -1,12 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Layout from 'components/Layout/Layout';
 import s from './Home.css';
 
 export default class componentName extends Component {
   render() {
     return (
-      <div className={s.root}>
+      <Layout>
         Annet will work hardly
-      </div>
+      </Layout>
     )
   }
 }

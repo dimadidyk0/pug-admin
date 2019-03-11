@@ -48,3 +48,22 @@ table {
 	border-spacing: 0;
 }
 /* end of reset.css */
+
+* {
+	box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+	--orange-light: #f9bf3b;
+	--orange: #f5ab35;
+	--orange-dark: #f15a22;
+
+
+	--color-1: rgba(56, 63, 81, 1);
+	--color-2: rgba(221, 219, 241, 1);
+	--color-3: rgba(60, 79, 118, 1);
+	--color-4: rgba(209, 190, 176, 1);
+	--color-5: rgba(171, 159, 157, 1);
+}

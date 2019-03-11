@@ -1,18 +1,14 @@
-export const NAVIGATION = [
+export const SIDEBAR_NAV = [
     {
         title: 'Home',
-        to: '/',
+        href: '/',
+        imageSrc: '',
+        imageAlt: '',
     },
     {
-        title: 'Gallery',
-        to: '/gallery',
-    },
-    {
-        title: 'Products',
-        to: '/products',
-    },
-    {
-        title: 'Contacts',
-        to: '/contacts',
+        title: 'Categories',
+        href: '/categories',
+        imageSrc: '',
+        imageAlt: '',
     },
 ]

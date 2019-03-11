@@ -1,0 +1,11 @@
+.root {
+    --sidebar-width: 220px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: var(--color-1);
+    width: var(--sidebar-width);
+}
